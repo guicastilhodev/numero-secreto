@@ -1,5 +1,5 @@
 let numerosSorteados = [];
-let numLimite = 10;
+let numLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -36,7 +36,7 @@ function verificarChute () {
 
 function mensagemInicial() {
     exibirTexto('h1', 'Jogo do número secreto');
-    exibirTexto('p', 'Escolha um número de 1 a 10');
+    exibirTexto('p', `Escolha um número de 1 a ${numLimite}`);
 }
 function novoJogo () {
     mensagemInicial();
